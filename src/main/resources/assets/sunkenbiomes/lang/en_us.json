@@ -1,6 +1,21 @@
 {
   "item.sunkenbiomes.raw_chlorophyte": "Raw Chlorophyte",
   "item.sunkenbiomes.chlorophyte_ingot": "Chlorophyte Ingot",
+  "item.sunkenbiomes.jungle_spores": "Jungle Spores",
+
+  "item.sunkenbiomes.chlorophyte_sword": "Chlorophyte Sword",
+  "item.sunkenbiomes.chlorophyte_pickaxe": "Chlorophyte Pickaxe",
+  "item.sunkenbiomes.chlorophyte_axe": "Chlorophyte Axe",
+  "item.sunkenbiomes.chlorophyte_shovel": "Chlorophyte Shovel",
+  "item.sunkenbiomes.chlorophyte_hoe": "Chlorophyte Hoe",
+
+  "item.sunkenbiomes.chlorophyte_helmet": "Chlorophyte Helmet",
+  "item.sunkenbiomes.chlorophyte_chestplate": "Chlorophyte Chestplate",
+  "item.sunkenbiomes.chlorophyte_leggings": "Chlorophyte Leggings",
+  "item.sunkenbiomes.chlorophyte_boots": "Chlorophyte Boots",
+
+  "block.sunkenbiomes.chlorophyte_block": "Block of Chlorophyte",
+  "block.sunkenbiomes.chlorophyte_ore": "Chlorophyte Ore",
 
   "creativetab.sunken_biomes_tab": "Sunken Biomes"
 }

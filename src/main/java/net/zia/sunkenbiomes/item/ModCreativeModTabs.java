@@ -9,6 +9,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.zia.sunkenbiomes.SunkenBiomes;
+import net.zia.sunkenbiomes.block.ModBlocks;
 
 public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -18,8 +19,23 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Chlorophyte_Ingot.get()))
                     .title(Component.translatable("creativetab.sunken_biomes_tab"))
                     .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ModBlocks.Chlorophyte_Block.get());
+                        pOutput.accept(ModBlocks.Chlorophyte_Ore.get());
                         pOutput.accept(ModItems.Chlorophyte_Ingot.get());
                         pOutput.accept(ModItems.Raw_Chlorophyte.get());
+                        pOutput.accept(ModItems.Jungle_Spores.get());
+
+                        pOutput.accept(ModItems.Chlorophyte_Sword.get());
+                        pOutput.accept(ModItems.Chlorophyte_Pickaxe.get());
+                        pOutput.accept(ModItems.Chlorophyte_Axe.get());
+                        pOutput.accept(ModItems.Chlorophyte_Shovel.get());
+                        pOutput.accept(ModItems.Chlorophyte_Hoe.get());
+
+                        pOutput.accept(ModItems.Chlorophyte_Helmet.get());
+                        pOutput.accept(ModItems.Chlorophyte_Chestplate.get());
+                        pOutput.accept(ModItems.Chlorophyte_Leggings.get());
+                        pOutput.accept(ModItems.Chlorophyte_Boots.get());
+
 
                     })
                     .build());
