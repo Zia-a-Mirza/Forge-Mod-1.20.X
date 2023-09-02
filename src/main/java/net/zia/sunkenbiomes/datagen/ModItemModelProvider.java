@@ -21,10 +21,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.Raw_Chlorophyte);
         simpleItem(ModItems.Jungle_Spores);
 
-        simpleItem(ModItems.Chlorophyte_Helmet);
-        simpleItem(ModItems.Chlorophyte_Chestplate);
-        simpleItem(ModItems.Chlorophyte_Leggings);
-        simpleItem(ModItems.Chlorophyte_Boots);
+        //simpleItem(ModItems.Chlorophyte_Helmet);
+        //simpleItem(ModItems.Chlorophyte_Chestplate);
+        //simpleItem(ModItems.Chlorophyte_Leggings);
+        //simpleItem(ModItems.Chlorophyte_Boots);
 
         handheldItem(ModItems.Chlorophyte_Sword);
         handheldItem(ModItems.Chlorophyte_Pickaxe);
