@@ -5,6 +5,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.zia.sunkenbiomes.SunkenBiomes;
+import net.zia.sunkenbiomes.item.custom.ModArmorItem;
 import net.zia.sunkenbiomes.item.custom.PoisonSwordItem;
 
 public class ModItems {
@@ -39,13 +40,13 @@ public class ModItems {
                     new Item.Properties().durability(256).rarity(Rarity.RARE)));
 
     public static final RegistryObject<Item> Chlorophyte_Helmet = ITEMS.register("chlorophyte_helmet",
-            () -> new ArmorItem(ModArmorMaterials.CHLOROPHYTE, ArmorItem.Type.HELMET, new Item.Properties()));
+            () -> new ModArmorItem(ModArmorMaterials.CHLOROPHYTE, ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistryObject<Item> Chlorophyte_Chestplate = ITEMS.register("chlorophyte_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.CHLOROPHYTE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+            () -> new ModArmorItem(ModArmorMaterials.CHLOROPHYTE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
     public static final RegistryObject<Item> Chlorophyte_Leggings = ITEMS.register("chlorophyte_leggings",
-            () -> new ArmorItem(ModArmorMaterials.CHLOROPHYTE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+            () -> new ModArmorItem(ModArmorMaterials.CHLOROPHYTE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> Chlorophyte_Boots = ITEMS.register("chlorophyte_boots",
-            () -> new ArmorItem(ModArmorMaterials.CHLOROPHYTE, ArmorItem.Type.BOOTS, new Item.Properties()));
+            () -> new ModArmorItem(ModArmorMaterials.CHLOROPHYTE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {
