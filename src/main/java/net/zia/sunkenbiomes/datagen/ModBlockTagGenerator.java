@@ -6,8 +6,10 @@ import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 import net.zia.sunkenbiomes.SunkenBiomes;
 import net.zia.sunkenbiomes.block.ModBlocks;
+import net.zia.sunkenbiomes.util.ModTags;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -23,9 +25,21 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.Chlorophyte_Block.get());
+                .add(ModBlocks.Chlorophyte_Block.get())
+                .add(ModBlocks.Jungle_Bricks.get())
+                .add(ModBlocks.Jungle_Brick_Slab.get())
+                .add(ModBlocks.Jungle_Brick_Stairs.get());
 
         this.tag(BlockTags.MINEABLE_WITH_SHOVEL)
+                .add(ModBlocks.Chlorophyte_Ore.get());
+
+        this.tag(ModTags.Blocks.NEEDS_CHLOROPHYTE_TOOL)
+                .add(ModBlocks.Jungle_Bricks.get())
+                .add(ModBlocks.Jungle_Brick_Slab.get())
+                .add(ModBlocks.Jungle_Brick_Stairs.get());
+
+        this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
+                .add(ModBlocks.Chlorophyte_Block.get())
                 .add(ModBlocks.Chlorophyte_Ore.get());
 
     }

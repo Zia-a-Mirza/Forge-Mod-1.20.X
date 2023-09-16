@@ -18,6 +18,13 @@ public class ModItems {
     public static final RegistryObject<Item> Raw_Chlorophyte = ITEMS.register("raw_chlorophyte",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
 
+    public static final RegistryObject<Item> Jungle_Key = ITEMS.register("jungle_key",
+            () -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
+
+    public static final RegistryObject<Item> Chlorophyte_Upgrade_Smithing_Template = ITEMS.register
+            ("chlorophyte_upgrade_smithing_template",
+            () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
+
     public static final RegistryObject<Item> Jungle_Spores = ITEMS.register("jungle_spores",
             () -> new Item(new Item.Properties().food(ModFoods.JUNGLE_SPORES)));
 

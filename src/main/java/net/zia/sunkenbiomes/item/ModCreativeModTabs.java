@@ -36,6 +36,18 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.Chlorophyte_Leggings.get());
                         pOutput.accept(ModItems.Chlorophyte_Boots.get());
 
+                        pOutput.accept(ModItems.Jungle_Key.get());
+                        pOutput.accept(ModItems.Chlorophyte_Upgrade_Smithing_Template.get());
+                        pOutput.accept(ModBlocks.Jungle_Bricks.get());
+                        pOutput.accept(ModBlocks.Jungle_Brick_Stairs.get());
+                        pOutput.accept(ModBlocks.Jungle_Brick_Slab.get());
+                        pOutput.accept(ModBlocks.Jungle_Brick_Wall.get());
+                        pOutput.accept(ModBlocks.Jungle_Brick_Fence.get());
+                        pOutput.accept(ModBlocks.Jungle_Brick_Fence_Gate.get());
+                        pOutput.accept(ModBlocks.Jungle_Brick_Button.get());
+                        pOutput.accept(ModBlocks.Jungle_Brick_Pressure_Plate.get());
+
+
 
                     })
                     .build());

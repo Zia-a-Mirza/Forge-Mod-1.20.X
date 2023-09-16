@@ -9,6 +9,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
+import net.minecraftforge.fml.common.Mod;
 import net.zia.sunkenbiomes.SunkenBiomes;
 import net.zia.sunkenbiomes.block.ModBlocks;
 import net.zia.sunkenbiomes.item.ModItems;
@@ -41,6 +42,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         of(ModBlocks.Chlorophyte_Block.get()).build()))
                 .save(pWriter);
 
+        stairBuilder(ModBlocks.Jungle_Brick_Stairs.get(), Ingredient.of(ModBlocks.Jungle_Bricks.get()));
+        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.Jungle_Brick_Slab.get(), Ingredient.of(ModBlocks.Jungle_Bricks.get()));
+        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.Jungle_Brick_Pressure_Plate.get(), Ingredient.of(ModBlocks.Jungle_Bricks.get()));
+        buttonBuilder(ModBlocks.Jungle_Brick_Button.get(), Ingredient.of(ModBlocks.Jungle_Bricks.get()));
 
     }
 

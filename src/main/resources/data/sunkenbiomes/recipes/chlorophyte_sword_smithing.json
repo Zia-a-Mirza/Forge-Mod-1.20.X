@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "sunkenbiomes:chlorophyte_ingot"
+  },
+  "base": {
+    "item": "minecraft:netherite_sword"
+  },
+  "result": {
+    "item": "sunkenbiomes:chlorophyte_sword"
+  },
+  "template": {
+    "item": "sunkenbiomes:chlorophyte_upgrade_smithing_template"
+  }
+}

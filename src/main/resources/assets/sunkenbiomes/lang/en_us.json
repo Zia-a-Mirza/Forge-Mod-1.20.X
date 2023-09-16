@@ -14,8 +14,20 @@
   "item.sunkenbiomes.chlorophyte_leggings": "Chlorophyte Leggings",
   "item.sunkenbiomes.chlorophyte_boots": "Chlorophyte Boots",
 
+  "item.sunkenbiomes.chlorophyte_upgrade_smithing_template": "Chlorophyte Upgrade Template",
+  "item.sunkenbiomes.jungle_key": "Jungle Key",
+
   "block.sunkenbiomes.chlorophyte_block": "Block of Chlorophyte",
   "block.sunkenbiomes.chlorophyte_ore": "Chlorophyte Ore",
+
+  "block.sunkenbiomes.jungle_bricks": "Jungle Bricks",
+  "block.sunkenbiomes.jungle_brick_stairs": "Jungle Brick Stairs",
+  "block.sunkenbiomes.jungle_brick_slab": "Jungle Brick Slab",
+  "block.sunkenbiomes.jungle_brick_wall": "Jungle Brick Wall",
+  "block.sunkenbiomes.jungle_brick_fence": "Jungle Brick Fence",
+  "block.sunkenbiomes.jungle_brick_fence_gate": "Jungle Brick Fence Gate",
+  "block.sunkenbiomes.jungle_brick_pressure_plate": "Jungle Brick Pressure Plate",
+  "block.sunkenbiomes.jungle_brick_button": "Jungle Brick Button",
 
   "creativetab.sunken_biomes_tab": "Sunken Biomes"
 }
