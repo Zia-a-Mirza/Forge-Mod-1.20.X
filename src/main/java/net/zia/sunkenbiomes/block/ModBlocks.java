@@ -45,24 +45,24 @@ public class ModBlocks {
     public static final RegistryObject<Block> Jungle_Brick_Pressure_Plate = registerBlock("jungle_brick_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS,
                     BlockBehaviour.Properties.copy(Blocks.BLACKSTONE_SLAB).sound(SoundType.DEEPSLATE_BRICKS)
-                    .requiresCorrectToolForDrops().strength(50f, 1200), BlockSetType.STONE));
+                    .requiresCorrectToolForDrops().strength(10f, 1200), BlockSetType.STONE));
 
     public static final RegistryObject<Block> Jungle_Brick_Button = registerBlock("jungle_brick_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.BLACKSTONE_SLAB).sound(SoundType.DEEPSLATE_BRICKS)
-                    .requiresCorrectToolForDrops().strength(50f, 1200),
+                    .requiresCorrectToolForDrops().strength(10f, 1200),
                     BlockSetType.STONE, 50, true));
 
     public static final RegistryObject<Block> Jungle_Brick_Fence = registerBlock("jungle_brick_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.BLACKSTONE).sound(SoundType.DEEPSLATE_BRICKS)
-                    .requiresCorrectToolForDrops().strength(50f, 1200)));
+                    .requiresCorrectToolForDrops().strength(20f, 1200)));
 
     public static final RegistryObject<Block> Jungle_Brick_Fence_Gate = registerBlock("jungle_brick_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.BLACKSTONE).sound(SoundType.DEEPSLATE_BRICKS)
-                    .requiresCorrectToolForDrops().strength(50f, 1200), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+                    .requiresCorrectToolForDrops().strength(20f, 1200), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-    public static final RegistryObject<Block> Jungle_Brick_Wall = registerBlock("jungle_brick_Wall",
+    public static final RegistryObject<Block> Jungle_Brick_Wall = registerBlock("jungle_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BLACKSTONE).sound(SoundType.DEEPSLATE_BRICKS)
-                    .requiresCorrectToolForDrops().strength(50f, 1200)));
+                    .requiresCorrectToolForDrops().strength(25f, 1200)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

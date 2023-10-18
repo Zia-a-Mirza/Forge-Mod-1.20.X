@@ -34,6 +34,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.Jungle_Brick_Stairs);
         blockItem(ModBlocks.Jungle_Brick_Slab);
         blockItem(ModBlocks.Jungle_Brick_Pressure_Plate);
+        blockItem(ModBlocks.Jungle_Brick_Fence_Gate);
 
     }
 

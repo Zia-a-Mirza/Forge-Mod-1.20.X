@@ -38,6 +38,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.Chlorophyte_Hoe);
 
         buttonItem(ModBlocks.Jungle_Brick_Button, ModBlocks.Jungle_Bricks);
+        wallItem(ModBlocks.Jungle_Brick_Wall, ModBlocks.Jungle_Bricks);
+        fenceItem(ModBlocks.Jungle_Brick_Fence, ModBlocks.Jungle_Bricks);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
@@ -55,6 +57,16 @@ public class ModItemModelProvider extends ItemModelProvider {
     public void buttonItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/button_inventory"))
                 .texture("texture",  new ResourceLocation(SunkenBiomes.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    }
+
+    public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/fence_inventory"))
+                .texture("texture",  new ResourceLocation(SunkenBiomes.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    }
+
+    public void wallItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/wall_inventory"))
+                .texture("wall",  new ResourceLocation(SunkenBiomes.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
     }
 
 }
