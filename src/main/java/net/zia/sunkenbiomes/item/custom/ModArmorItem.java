@@ -8,6 +8,8 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.zia.sunkenbiomes.effect.ModEffects;
+import net.zia.sunkenbiomes.effect.PoisonResistanceEffect;
 import net.zia.sunkenbiomes.item.ModArmorMaterials;
 
 import java.util.Map;
@@ -15,7 +17,7 @@ import java.util.Map;
 public class ModArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
-                    .put(ModArmorMaterials.CHLOROPHYTE, new MobEffectInstance(MobEffects.JUMP, 200, 1))
+                    .put(ModArmorMaterials.CHLOROPHYTE, new MobEffectInstance(ModEffects.POISON_RESISTANCE_EFFECT.get(), 200, 1))
                     .build();
 
     public ModArmorItem(ArmorMaterial material, Type type, Properties properties) {

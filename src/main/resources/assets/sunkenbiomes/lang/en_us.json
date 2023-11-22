@@ -29,5 +29,7 @@
   "block.sunkenbiomes.jungle_brick_pressure_plate": "Jungle Brick Pressure Plate",
   "block.sunkenbiomes.jungle_brick_button": "Jungle Brick Button",
 
+  "effect.sunkenbiomes.poison_resistance": "Poison Resistance",
+
   "creativetab.sunken_biomes_tab": "Sunken Biomes"
 }
